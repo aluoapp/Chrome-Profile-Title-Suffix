@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Name Settings</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        padding: 24px;
+        max-width: 480px;
+        margin: 0 auto;
+        background-color: #f9fafb;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 300px;
+        min-width: 300px;
+        max-width: 320px;
+        margin: 0 auto;
+      }
+      h2 {
+        color: #1f2937;
+        margin-bottom: 0;
+        font-size: 1.5rem;
+      }
+      input {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 8px 12px;
+        border: 1px solid #e5e7eb;
+        border-radius: 6px;
+        margin-bottom: 0;
+        font-size: 14px;
+      }
+      input:focus {
+        outline: none;
+        border-color: #3b82f6;
+        box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+      }
+      .input-hint {
+        color: #6b7280;
+        font-size: 13px;
+        line-height: 1.4;
+        margin-top: -8px;
+      }
+      button {
+        box-sizing: border-box;
+        background-color: #3b82f6;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.2s;
+        width: 100%;
+      }
+      button:hover {
+        background-color: #2563eb;
+      }
+      #status {
+        margin-top: 0;
+        color: #4b5563;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Set Profile Name</h2>
+      <input type="text" id="profileName" placeholder="e.g., Work / Personal" />
+      <p class="input-hint">This name will be added as a suffix to your browser tabs, making it easier to identify different Chrome profiles when switching between windows.</p>
+      <button id="save">Save</button>
+      <p id="status"></p>
+    </div>
+
+    <script src="options.js"></script>
+  </body>
+</html>
