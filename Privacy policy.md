@@ -1,6 +1,6 @@
 # Privacy Policy for Chrome Profile Title Suffix
 
-Last updated: [2015-05-10]
+Last updated: [2025-05-10]
 
 ## Overview
 
